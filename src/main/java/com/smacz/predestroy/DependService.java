@@ -1,9 +1,9 @@
 package com.smacz.predestroy;
 
 import org.springframework.validation.annotation.Validated;
+import javax.validation.Valid;
 
 @Validated
 public interface DependService {
-
-    public void stop(Dto dto);
+    void stop(@Valid Dto dto);
 }
